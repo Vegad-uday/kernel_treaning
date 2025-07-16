@@ -1,0 +1,22 @@
+menu "I2C MPU6500_driver"
+
+config I2C_MPU6500_DRIVER
+        tristate "I2C_MPU6500_DRIVER"
+        depends on I2C=y
+
+        help
+           Say yes here to build support for MPU6500 Tri-axis Gyro Sensor driver connected via I2C.
+
+config I2C_TEST_DRIVER
+        tristate "I2C_TEST_DRIVER"
+        depends on I2C=y
+
+        help
+           Say yes for testing.
+config I2C_WORK_DRIVER
+        tristate "I2C_WORK_DRIVER"
+        depends on I2C=y
+
+        help
+           Say yes for testing work Queues.
+endmenu          
